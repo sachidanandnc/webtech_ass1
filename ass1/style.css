@@ -1,0 +1,147 @@
+/* ========== GLOBAL ========== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  line-height: 1.6;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: all 0.4s ease;
+}
+
+/* Theme colors */
+:root {
+  --bg-color: #f7f9fb;
+  --text-color: #1c1c1c;
+  --accent-color: #0077ff;
+  --card-bg: #ffffff;
+}
+
+body.dark-mode {
+  --bg-color: #121212;
+  --text-color: #e6e6e6;
+  --accent-color: #00b7ff;
+  --card-bg: #1e1e1e;
+}
+
+/* ========== NAVBAR ========== */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: var(--card-bg);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8rem 2rem;
+  z-index: 1000;
+}
+
+.logo {
+  color: var(--accent-color);
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+  align-items: center;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--text-color);
+  font-weight: 500;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: var(--accent-color);
+}
+
+#theme-toggle {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+/* ========== CONTENT ========== */
+.container {
+  max-width: 900px;
+  margin: 100px auto 60px;
+  padding: 40px 30px;
+  background: var(--card-bg);
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+h2, h3 {
+  color: var(--accent-color);
+  margin-bottom: 12px;
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+.profile-pic {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  border: 3px solid var(--accent-color);
+  display: block;
+  margin: 0 auto 1rem;
+}
+
+.intro {
+  text-align: center;
+}
+
+.bio {
+  font-size: 1rem;
+  max-width: 650px;
+  margin: 0 auto;
+  color: var(--text-color);
+}
+
+.biodata table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+.biodata td {
+  padding: 10px;
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+.skills li, ul li {
+  margin-bottom: 6px;
+}
+
+.resume section ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+/* ========== FOOTER ========== */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: var(--card-bg);
+  box-shadow: 0 -2px 6px rgba(0,0,0,0.1);
+  color: var(--text-color);
+}
+
+.sign {
+  text-align: right;
+  margin-top: 1rem;
+}
